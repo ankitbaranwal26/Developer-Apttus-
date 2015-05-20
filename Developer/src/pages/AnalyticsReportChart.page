@@ -1,0 +1,11 @@
+<apex:page showHeader="false" standardController="Account">
+ 
+   
+    <!--<apex:outputLink onclick="window.top.location = '/{!s_reportId_right}?pn0=co&pv0={!s_name_right}'" rendered="{!b_showReport_right}" id="theLink_1" target="_blank">-->
+        <analytics:reportChart cacheResults="false" showRefreshButton="false" size="small" reportId="00Oi00000065D6T" rendered="TRUE" filter="[{column:'AMOUNT',operator:'greaterThan',value:'15000'}]">
+        </analytics:reportChart>
+    <!--</apex:outputLink>-->
+     
+    <!--<b><apex:outputText rendered="{!!b_showReport_right}">This report is not available for this record</apex:outputText></b>-->
+ 
+</apex:page>
