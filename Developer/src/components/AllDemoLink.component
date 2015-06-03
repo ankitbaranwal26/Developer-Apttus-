@@ -1,4 +1,5 @@
 <apex:component selfClosing="true">
+	<!-- This is used as a visualforce component -->
     <apex:attribute name="right" description="right" type="Integer" default="0"/>
     <apex:attribute name="top" description="top" type="Integer" default="0"/>
     <apex:Attribute name="importCSS" description="import CSS" type="boolean" default="true"/>
