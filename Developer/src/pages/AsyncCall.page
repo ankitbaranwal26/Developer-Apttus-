@@ -1,0 +1,49 @@
+<apex:page >
+
+    <apex:includeScript value="/soap/ajax/29.0/connection.js"/>
+    <apex:includeScript value="/soap/ajax/29.0/apex.js"/>
+    
+    <script type="text/javascript">
+        sforce.connection.sessionId = "{!$Api.Session_ID}";
+    </script>
+     
+    <script src="../../soap/ajax/34.0/connection.js" type="text/javascript">
+    </script>
+    <script>
+        window.onload = setupPage;
+       function setupPage(){
+       
+          var state = { //state that you need when the callback is called
+          output : document.getElementById("output"),
+          startTime : new Date().getTime()};
+
+            var callback = sforce.connection.query("Select id,Name FROM Account LIMIT 10",
+            {
+            onSuccess:success,
+            onFailure:failure,
+            source:state});
+            
+            sforce.connection.query("Select Id, Name, Industry From Account order by Industry",callback);
+            
+        } 
+        function success(queryResult,source){
+            if(queryResult.size > 0){
+                var records = queryResult.getArray("records");
+                for(var i=0; i<records.length; i++){
+                    var record = records[i];
+                    source.output.innerHTML = record;
+                    //alert(record.Name + " -- " + record.Id);
+                }
+            }
+        }
+        function failure(error,source){
+            //alert("The error is logged due to :" +error);
+            source.output.innerHTML = "The error is logged due to :" + error;
+        }
+    
+    </script>
+   <apex:form >
+      <apex:commandButton value="Show Accounts" onclick="setupPage();" reRender="aaa" />
+      <div id="output"></div>
+  </apex:form>
+</apex:page>
