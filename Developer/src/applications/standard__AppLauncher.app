@@ -2,4 +2,6 @@
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <defaultLandingTab>standard-home</defaultLandingTab>
     <tab>standard-AppLauncher</tab>
+    <tab>Survey_Customers_webtab</tab>
+    <tab>Customer_Satisfaction_Survey__c</tab>
 </CustomApplication>

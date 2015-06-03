@@ -163,10 +163,15 @@
     <tab>standard-Opportunity</tab>
     <tab>standard-Lead</tab>
     <tab>standard-Knowledge</tab>
+    <tab>Survey_Customers_webtab</tab>
+    <tab>Customer_Satisfaction_Survey__c</tab>
     <workspaceMappings>
         <mapping>
             <fieldName>AccountId</fieldName>
             <tab>standard-Opportunity</tab>
+        </mapping>
+        <mapping>
+            <tab>Survey_Customers_webtab</tab>
         </mapping>
         <mapping>
             <fieldName>AccountId</fieldName>
@@ -184,6 +189,9 @@
         </mapping>
         <mapping>
             <tab>standard-Account</tab>
+        </mapping>
+        <mapping>
+            <tab>Customer_Satisfaction_Survey__c</tab>
         </mapping>
     </workspaceMappings>
 </CustomApplication>

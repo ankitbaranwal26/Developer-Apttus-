@@ -6,4 +6,6 @@
     <tab>standard-OtherUserProfile</tab>
     <tab>standard-CollaborationGroup</tab>
     <tab>standard-File</tab>
+    <tab>Survey_Customers_webtab</tab>
+    <tab>Customer_Satisfaction_Survey__c</tab>
 </CustomApplication>

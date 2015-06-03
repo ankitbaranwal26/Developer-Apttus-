@@ -8,4 +8,6 @@
     <tab>standard-Opportunity</tab>
     <tab>standard-report</tab>
     <tab>standard-Dashboard</tab>
+    <tab>Survey_Customers_webtab</tab>
+    <tab>Customer_Satisfaction_Survey__c</tab>
 </CustomApplication>

@@ -6,4 +6,6 @@
     <tab>standard-ContentSearch</tab>
     <tab>standard-ContentSubscriptions</tab>
     <tab>standard-ContentFavorites</tab>
+    <tab>Survey_Customers_webtab</tab>
+    <tab>Customer_Satisfaction_Survey__c</tab>
 </CustomApplication>
